@@ -33,16 +33,18 @@ app.on('ready', function () {
     width: 200,
     height: 50,
     resizable: false,
+    //resizable:true,
     frame: false,
     transparent: true,
     alwaysOnTop: true,
-    //resizable:true,
     skipTaskbar: true
    });
   mainWindow.loadURL('file://' + __dirname + '/app/index.html');
 
   mainWindow.setPosition(setWin["x"], setWin["y"]);
   //mainWindow.setSize(setWin["width"], setWin["height"]);
+
+  //mainWindow.openDevTools();
 
   // タスクトレイに格納
   Menu = electron.Menu;
