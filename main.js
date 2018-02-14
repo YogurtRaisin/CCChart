@@ -46,6 +46,8 @@ app.on('ready', function () {
 
   //mainWindow.openDevTools();
 
+  mainWindow.setIgnoreMouseEvents(isClickable);
+
   // タスクトレイに格納
   Menu = electron.Menu;
   Tray = electron.Tray;
